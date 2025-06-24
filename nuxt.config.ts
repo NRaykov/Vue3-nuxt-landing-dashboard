@@ -16,7 +16,7 @@ export default defineNuxtConfig({
 	alias: {
 		'@': resolve(new URL('.', import.meta.url).pathname),
 	},
-	css: ['~/assets/scss/main.scss'],
+	css: ['~/assets/scss/main.scss', '@vuepic/vue-datepicker/dist/main.css'],
 	modules: ['@pinia/nuxt'],
 	postcss: {
 		plugins: {

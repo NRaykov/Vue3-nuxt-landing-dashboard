@@ -1,9 +1,8 @@
 <template>
 	<aside class="w-64 h-screen bg-white dark:bg-gray-900 shadow-md">
 		<nav class="p-4">
-			<h2 class="text-xl font-bold mb-4">Admin Panel</h2>
-			<ul class="space-y-2">
-				<!-- Dashboard Dropdown -->
+			<NuxtLink to="/admin" class="font-bold"> Admin Panel </NuxtLink>
+			<ul class="space-y-2 mt-10">
 				<li>
 					<button
 						class="flex items-center w-full p-2 text-left hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md"
