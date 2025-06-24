@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Set all text elements to font-light, but exclude headings */
+body, p, span, li, a, div {
+  @apply font-light leading-relaxed;
+}
+
+/* Override for headings */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+}

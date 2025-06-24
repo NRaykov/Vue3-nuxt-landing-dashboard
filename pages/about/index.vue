@@ -1,0 +1,63 @@
+<template>
+	<section
+		class="max-w-4xl mx-auto px-6 py-20 text-center dark:bg-gray-900 text-gray-800 dark:text-gray-100"
+	>
+		<h1 class="mt-10 text-4xl font-bold mb-6 text-gray-900 dark:text-white">
+			About Us
+		</h1>
+		<p
+			class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed text-gray-600 dark:text-gray-400"
+		>
+			Safeguard Web was built to help indie makers and devs launch fast.
+			It’s built on Nuxt 3, styled with Tailwind, and powered by your
+			vision.
+		</p>
+	</section>
+	<section
+		class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-12 items-center mb-10"
+	>
+		<!-- Left Column: Text Content -->
+		<div>
+			<h2 class="text-3xl font-bold mb-6">Why Choose Safeguard Web?</h2>
+			<ul class="space-y-4 text-gray-600 dark:text-gray-300">
+				<li class="flex items-start gap-3">
+					<span class="text-primary text-xl">✔️</span>
+					<span
+						><strong>Built with Nuxt 3:</strong> Enjoy
+						lightning-fast performance and modern tooling.</span
+					>
+				</li>
+				<li class="flex items-start gap-3">
+					<span class="text-primary text-xl">✔️</span>
+					<span
+						><strong>Tailwind Styled:</strong> Easy to customize
+						with utility-first CSS.</span
+					>
+				</li>
+				<li class="flex items-start gap-3">
+					<span class="text-primary text-xl">✔️</span>
+					<span
+						><strong>Modular UI:</strong> Reusable components to
+						build whatever you imagine.</span
+					>
+				</li>
+				<li class="flex items-start gap-3">
+					<span class="text-primary text-xl">✔️</span>
+					<span
+						><strong>Production Ready:</strong> Clean code, dark
+						mode, responsive layout, and more.</span
+					>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Right Column: Image -->
+		<div class="w-full">
+			<img
+				src="/images/about.jpg"
+				alt="About Safeguard"
+				class="rounded-xl shadow-lg w-full object-cover"
+			/>
+		</div>
+	</section>
+</template>

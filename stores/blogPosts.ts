@@ -1,0 +1,120 @@
+import { defineStore } from 'pinia';
+
+export const useBlogPosts = defineStore('blogPosts', {
+	state: () => ({
+		heading: {
+			badge: 'Blog',
+			title: 'Blog section which you can use in your template',
+			description:
+				'You can rely on our amazing features list and also our customer services will be a great experience for you without doubt and in no time',
+		},
+		blogPosts: [
+			{
+				id: 1,
+				slug: '5-bad-landing-page-examples',
+				title: '5 Bad Landing Page Examples How We Would Fix Them',
+				excerpt:
+					'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+				image: 'https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg?ga=GA1.1.1625201459.1749453790&semt=ais_hybrid&w=740',
+				date: 'Apr 16, 2025',
+				views: 27567,
+				tag: 'UX Design',
+				author: 'Mark R. Freeman',
+				authorUrl: '#',
+				content: `
+					<p>Bad landing pages can hurt conversions, trust, and SEO. In this article, we break down common design mistakes and how to fix them.</p>
+					<p>We looked at dozens of real-world landing pages and found recurring issues like unclear CTAs, poor contrast, and broken mobile layouts.</p>
+				`,
+			},
+			{
+				id: 2,
+				slug: 'why-ux-design-matters',
+				title: 'Why UX Design Matters and How it Affects Ranking',
+				excerpt:
+					'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+				image: 'https://img.freepik.com/premium-photo/desktop-image-background-copy-space_1179130-544635.jpg?ga=GA1.1.1625201459.1749453790&semt=ais_hybrid&w=740',
+				date: 'Apr 16, 2025',
+				views: 29567,
+				tag: 'Digital',
+				author: 'James Robert',
+				authorUrl: '#',
+				content: `
+					<p>UX design isn't just about pretty layouts. Google considers user experience a ranking factor in Core Web Vitals.</p>
+					<p>Sites with clean, accessible interfaces tend to rank higher due to better engagement metrics like time on page and bounce rate.</p>
+				`,
+			},
+			{
+				id: 3,
+				slug: 'this-week-in-search',
+				title: 'This Week in Search: New Limits and Exciting Features',
+				excerpt:
+					'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+				image: 'https://img.freepik.com/free-photo/seo-search-engine-optimization-internet-digital-concept_53876-138498.jpg?ga=GA1.1.1625201459.1749453790&semt=ais_hybrid&w=740',
+				date: 'Apr 16, 2025',
+				views: 28567,
+				tag: 'Html',
+				author: 'David William',
+				authorUrl: '#',
+				content: `
+					<p>Google rolled out new updates that change how snippets are generated. This may affect click-through rates for marketers.</p>
+					<p>We also saw improvements in the Search Console tools and a new mobile-first indexing warning.</p>
+				`,
+			},
+			{
+				id: 4,
+				slug: 'design-systems-for-fast-growth',
+				title: 'Design Systems for Fast-Growing Teams',
+				excerpt:
+					'Scaling design? You’ll need a system. Here’s how to build one that supports fast iteration.',
+				image: 'https://img.freepik.com/free-photo/funny-image-with-model-posing_23-2151179374.jpg?ga=GA1.1.1625201459.1749453790&semt=ais_hybrid&w=740',
+				date: 'Jun 5, 2025',
+				views: 14712,
+				tag: 'Design System',
+				author: 'Emma Wallace',
+				authorUrl: '#',
+				content: `
+					<p>Design systems are a critical part of scaling product teams without design chaos. They ensure consistency and help engineers move fast.</p>
+					<p>This post shares tips on documenting components, enforcing usage, and integrating design systems into your Nuxt 3 apps.</p>
+				`,
+			},
+			{
+				id: 5,
+				slug: 'tailwind-vs-bootstrap',
+				title: 'Tailwind vs Bootstrap: What to Use in 2025?',
+				excerpt:
+					'Which CSS framework is best for your next Nuxt 3 project? We break it down by dev speed, performance, and flexibility.',
+				image: 'https://w3sniff.com/common/article/bootstrap-vs-tailwindcss1.png',
+				date: 'May 30, 2025',
+				views: 22495,
+				tag: 'CSS',
+				author: 'Laura Chen',
+				authorUrl: '#',
+				content: `
+					<p>Tailwind has taken the frontend world by storm, but is it always the right choice? This article compares it with Bootstrap in the context of modern Vue projects.</p>
+					<p>We also include benchmarks and team productivity observations from real projects.</p>
+				`,
+			},
+			{
+				id: 6,
+				slug: 'seo-for-nuxt-apps',
+				title: 'SEO for Nuxt Apps: What You Should Know',
+				excerpt:
+					'Want traffic to your landing pages? SEO is a must. Learn how to optimize your Nuxt 3 app with simple tips.',
+				image: 'https://img.freepik.com/premium-photo/seo-search-engine-optimization-modish-ecommerce-online-retail-business-showing-computer-screen_31965-233305.jpg?ga=GA1.1.1625201459.1749453790&semt=ais_hybrid&w=740',
+				date: 'May 25, 2025',
+				views: 31245,
+				tag: 'SEO',
+				author: 'Nina Kovacs',
+				authorUrl: '#',
+				content: `
+					<p>Nuxt 3 is SEO-friendly by default, but you can do more. Learn how to use meta tags, dynamic routes, and structured data to rank higher.</p>
+					<p>This post is especially useful if you're launching with Gumroad or targeting niche traffic with blog content.</p>
+				`,
+			},
+		],
+	}),
+	getters: {
+		getPostBySlug: (state) => (slug: string) =>
+			state.blogPosts.find((p) => p.slug === slug),
+	},
+});
