@@ -19,7 +19,7 @@
 					<ul v-if="isDashboardOpen" class="pl-8 mt-2 space-y-1">
 						<li>
 							<NuxtLink
-								to="/admin/overview"
+								to="/admin/"
 								class="flex items-center hover:underline"
 							>
 								<BarChart class="w-4 h-4 mr-2" /> Overview
@@ -27,7 +27,7 @@
 						</li>
 						<li>
 							<NuxtLink
-								to="/admin/analytics"
+								to="/admin/"
 								class="flex items-center hover:underline"
 							>
 								<Activity class="w-4 h-4 mr-2" /> Analytics
@@ -35,7 +35,7 @@
 						</li>
 						<li>
 							<NuxtLink
-								to="/admin/reports"
+								to="/admin/"
 								class="flex items-center hover:underline"
 							>
 								<FileText class="w-4 h-4 mr-2" /> Reports

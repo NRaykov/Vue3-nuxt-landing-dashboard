@@ -43,7 +43,7 @@ npm run build
 npm run preview
 ```
 
-## 📁 Folder Structure Overview
+## 📁 Folder Structure Overview - Demo
 
 ```
 ├── components/          → Reusable Vue components
