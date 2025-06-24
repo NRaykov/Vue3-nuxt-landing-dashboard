@@ -25,11 +25,4 @@ export default defineNuxtConfig({
 		},
 	},
 	compatibilityDate: '2025-03-06',
-
-	nitro: {
-		preset: 'static',
-		output: {
-			dir: 'dist',
-		},
-	},
 });
