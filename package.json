@@ -3,14 +3,11 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build": "nuxt build",
 		"dev": "nuxt dev",
+		"build": "nuxt build",
 		"generate": "nuxt generate",
-		"postgenerate": "echo '<script>location.replace(\"/Vue3-nuxt-landing-dashboard/\" + location.hash.slice(1));</script>' > dist/404.html",
-		"nuxi": "npx nuxi generate",
 		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare",
-		"deploy": "gh-pages -d dist"
+		"postinstall": "nuxt prepare"
 	},
 	"dependencies": {
 		"@pinia/nuxt": "^0.11.0",

@@ -2,7 +2,7 @@ import { resolve } from 'path';
 
 export default defineNuxtConfig({
 	app: {
-		baseURL: '/Vue3-nuxt-landing-dashboard/',
+		baseURL: '/',
 		head: {
 			link: [
 				{
