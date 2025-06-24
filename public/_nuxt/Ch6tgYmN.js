@@ -1,0 +1,1 @@
+import{g as a,c as n,o,a as t,F as s}from"./DMr6S_LN.js";const p=a({__name:"index",setup(r){return(l,e)=>(o(),n(s,null,[e[0]||(e[0]=t("h1",{class:"text-2xl font-bold"},"Admin Dashboard",-1)),e[1]||(e[1]=t("p",{class:"mt-2 text-gray-600"},"Welcome to the admin panel.",-1))],64))}});export{p as default};
