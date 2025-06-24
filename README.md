@@ -4,6 +4,10 @@ A professional and beautifully crafted landing page & UI kit built with **Nuxt 3
 
 ## ✨ Preview
 
+Landing: https://aquamarine-dasik-b4ebcb.netlify.app/admin
+
+Dashboard: https://aquamarine-dasik-b4ebcb.netlify.app/admin
+
 ---
 
 ## 📦 Features

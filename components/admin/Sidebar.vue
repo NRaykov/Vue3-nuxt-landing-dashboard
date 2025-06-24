@@ -17,7 +17,15 @@
 						/>
 					</button>
 					<ul v-if="isDashboardOpen" class="pl-8 mt-2 space-y-1">
-						<li>
+						<li class="my-3">
+							<NuxtLink
+								to="/admin/analytics"
+								class="flex items-center hover:underline"
+							>
+								<Activity class="w-4 h-4 mr-2" /> Analytics
+							</NuxtLink>
+						</li>
+						<li class="my-3">
 							<NuxtLink
 								to="/admin/"
 								class="flex items-center hover:underline"
@@ -25,15 +33,7 @@
 								<BarChart class="w-4 h-4 mr-2" /> Overview
 							</NuxtLink>
 						</li>
-						<li>
-							<NuxtLink
-								to="/admin/"
-								class="flex items-center hover:underline"
-							>
-								<Activity class="w-4 h-4 mr-2" /> Analytics
-							</NuxtLink>
-						</li>
-						<li>
+						<li class="my-3">
 							<NuxtLink
 								to="/admin/"
 								class="flex items-center hover:underline"
